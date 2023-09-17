@@ -42,11 +42,11 @@ def texting():
     f = open('ERROR.txt','w')
     f.write("он еще не знает напиши SECURE")
 
-def baring():
+def baring():                                   # прогресс бар
 
     mylist = [1,2,3,4,5,6,7,8]
 
-    bar = FillingSquaresBar('Countdown', max = len(mylist))
+    bar = FillingSquaresBar('Countdown', max = len(mylist))         
 
     for item in mylist:
         bar.next()

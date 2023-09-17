@@ -7,10 +7,10 @@ from dlc import radio
 from dlc import baring
 from dlc import times
 from dlc import crush
-import time
 from edes import filesave
 from edes import textone
- 
+import time
+
 baring() # загрузка в кмд
 texting() 
 frazes = {"fox" : "fox lol ahaha"} # пока не используеться
@@ -55,7 +55,7 @@ def main():
     elif guess == "молчи": #прикольчик
 
         output.insert(tk.END,'окей команда принята пооокааа')
-        times()
+        baring()
         crush()
 
     elif guess == 'help me':           
@@ -75,7 +75,7 @@ def main():
         output.insert(tk.END, 'пожалуйста подождите...')
         filesave()
 
-    elif guess == "secret":
+    elif guess == "secret": # секрет
         radio()
     
     
@@ -104,7 +104,7 @@ entry2.pack()
 button = tk.Button(window, text="Ввод", command=main)
 button.pack()
 
-output = tk.Text(window)
+output = tk.Text(window) 
 output.pack()
 
 output2 = tk.Text(window)
