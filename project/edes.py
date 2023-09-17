@@ -8,3 +8,7 @@ def filesave():
 
     btn = tk.Button(defing, text="create file", command=filesave )
     btn.place_configure(x=23,y=23)
+
+def textone():
+    secrets3 = open('DSD.txt','w')  # открытие в режиме записи  # не используеться в данный момент
+    secrets3.write("слушай а ты хитрый ладно дам тебе один прикол god дамн")

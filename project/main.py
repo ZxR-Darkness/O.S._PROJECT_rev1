@@ -9,6 +9,7 @@ from dlc import times
 from dlc import crush
 import time
 from edes import filesave
+from edes import textone
  
 baring() # загрузка в кмд
 texting() 
@@ -36,16 +37,14 @@ def main():
         output.insert(tk.END, 'manto aio 80 kit')
 
     elif guess == 'foxlolka':
-        output.insert(tk.END, "hahahah")
-
+        output.insert(tk.END, '')
+        textone()
     elif guess == "drag 2": #прикольчик
 
         output.insert(tk.END, 'drag 2 ичо дальше?')
-    
 
     elif guess == "aegis": #прикольчик
-
-        output.insert(tk.END,'tkaegis boost 2')
+         output.insert(tk.END,'tkaegis boost 2')
 
     elif guess == 'hell': #прикольчик
         output.insert(tk.END, 'мм а ты любишь погоречей')
