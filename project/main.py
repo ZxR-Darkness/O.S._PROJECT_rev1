@@ -35,6 +35,8 @@ def main():
 
         output.insert(tk.END, 'manto aio 80 kit')
 
+    elif guess == 'foxlolka':
+        output.insert(tk.END, "hahahah")
 
     elif guess == "drag 2": #прикольчик
 
