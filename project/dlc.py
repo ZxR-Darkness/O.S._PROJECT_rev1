@@ -5,7 +5,7 @@ import time
 import webbrowser
 from progress.bar import FillingSquaresBar
 import pygame
-
+#import uuid
 def box():
     messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")  # функция которая открывается в главном файле
     time.sleep(5)
@@ -61,4 +61,11 @@ def crush():                            # завершает работу ком
 def times():
     time.sleep(3)
 
-
+def boxes():
+    otvet = messagebox.askyesno("создание ID",'вы уверены?')            # создание специального UUID
+    if otvet == True:
+        print("id create please close programm")
+    else:
+        print("id error")
+        baring()
+        print('safe error')

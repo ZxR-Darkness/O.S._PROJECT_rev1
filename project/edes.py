@@ -1,6 +1,5 @@
 import tkinter as tk
 
-
 def filesave():
     secrets2 = open('DSD.txt','w')  # открытие в режиме записи  # не используеться в данный момент
     secrets2.write("его нету и не будет никогда god")

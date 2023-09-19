@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox          #импорт нужных файлов и модулей
-import os
 from dlc import box
 from dlc import texting
 from dlc import radio
@@ -9,7 +8,6 @@ from dlc import times
 from dlc import crush
 from edes import filesave
 from edes import textone
-import time
 
 baring() # загрузка в кмд
 texting() 
