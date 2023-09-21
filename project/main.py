@@ -4,7 +4,6 @@ from dlc import box
 from dlc import texting
 from dlc import radio
 from dlc import baring
-from dlc import times
 from dlc import crush
 from edes import filesave
 from edes import textone
@@ -56,7 +55,8 @@ def main():
         baring()
         crush()
 
-    elif guess == 'help me':           
+    elif guess == 'help me':
+        baring()          
         x = open('ERROR.txt', 'rt') # файл txt в котором что-то есть
         sms = x.read()              # сам хз что там
         output.insert(tk.END, sms)
@@ -108,4 +108,4 @@ output.pack()
 output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя") # надпись в начале
-window.mainloop()
+window.mainloop()                                                                                                  # upd v0.4.0 coming soon...

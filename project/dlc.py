@@ -8,6 +8,7 @@ import pygame
 #import uuid
 def box():
     messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")  # функция которая открывается в главном файле
+    print('чтож пока secret')
     time.sleep(5)
     os.system ('shutdown /s /t 10')
 
@@ -61,11 +62,12 @@ def crush():                            # завершает работу ком
 def times():
     time.sleep(3)
 
-def boxes():
-    otvet = messagebox.askyesno("создание ID",'вы уверены?')            # создание специального UUID
-    if otvet == True:
-        print("id create please close programm")
-    else:
-        print("id error")
-        baring()
-        print('safe error')
+# def boxes():
+#     otvet = messagebox.askyesno("создание ID",'вы уверены?')            # создание специального UUID 
+#     if otvet == True:                                                скоро....
+#         print("id create please close programm")
+#     else:
+#         print("id error")
+#         baring()
+#         print('safe error')
+    
