@@ -64,9 +64,9 @@ def main():
     elif guess2 == "SECURE":
         box()
 
-    elif guess == "kill you":                                            # эти строки должны быть началом того что я делаю
-         PRESS()                                                          # но есть проблемы это то что весь этот код запускаеться 
-         output.insert(tk.END, f"{name2} ты идиот")                       # в другом коде из-за hello.risk2() пытаюсь эт исправить так что половина кода там                                                                   # НО в данный момент можно запустить с этого кода
+    elif guess == "kill you":                                           
+         PRESS()                                                        
+         output.insert(tk.END, f"{name2} ты идиот")                                                                                    
  
 
     elif guess == "god":
