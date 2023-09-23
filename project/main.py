@@ -104,7 +104,7 @@ button.pack()
 
 output = tk.Text(window) 
 output.pack()
-
+#2
 output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя") # надпись в начале
