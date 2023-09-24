@@ -1,3 +1,4 @@
+#главный файл
 import tkinter as tk
 from tkinter import messagebox          #импорт нужных файлов и модулей
 from dlc import box
@@ -10,7 +11,7 @@ from edes import textone
 
 baring() # загрузка в кмд
 texting() 
-frazes = {"fox" : "fox lol ahaha"} # пока не используеться
+# frazes = {"fox" : "fox lol ahaha"} # пока не используеться
 h = "XX ASCII"  # пока не используеться
 Off = 23
 

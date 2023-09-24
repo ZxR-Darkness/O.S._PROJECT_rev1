@@ -1,3 +1,5 @@
+#  доп файл с созданием txt файлов для работы 
+
 import tkinter as tk
 
 def filesave():
