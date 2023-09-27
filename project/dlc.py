@@ -65,7 +65,7 @@ def times():
 
 # def boxes():
 #     otvet = messagebox.askyesno("создание ID",'вы уверены?')            # создание специального UUID 
-#     if otvet == True:                                                скоро....
+#     if otvet == True:                                                скоро
 #         print("id create please close programm")
 #     else:
 #         print("id error")

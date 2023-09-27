@@ -3,7 +3,7 @@
 import tkinter as tk
 
 def filesave():
-    secrets2 = open('DSD.txt','w')  # открытие в режиме записи  # 
+    secrets2 = open('DSD.txt','w')  # открытие в режиме записи   
     secrets2.write("его нету и не будет никогда god")
     defing = tk.Tk()
 
@@ -11,6 +11,6 @@ def filesave():
     btn.place_configure(x=23,y=23)
 
 def textone():
-    secrets3 = open('DSD.txt','w')  # открытие в режиме записи  # 
+    secrets3 = open('DSD.txt','w')  # открытие в режиме записи  
     secrets3.write("слушай а ты хитрый ладно дам тебе один прикол god дамн")
 
