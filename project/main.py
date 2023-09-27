@@ -10,8 +10,7 @@ from edes import filesave
 from edes import textone
 
 baring() # загрузка в кмд
-texting() 
-# frazes = {"fox" : "fox lol ahaha"} # пока не используеться
+texting()
 h = "XX ASCII"  # пока не используеться
 Off = 23
 
