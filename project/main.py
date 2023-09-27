@@ -77,8 +77,11 @@ def main():
     elif guess == "secret": # секрет
         radio()
     
-    
-    
+    elif guess == "update v0.4.0":
+        messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")
+        output.insert(tk.END, "WOW UPDATE NEW, ура v0.4.0 вышла прикол)")
+        baring()
+        print("мои поздравления")
     else:
         output.insert(tk.END, "неправильная команда")
     
@@ -109,4 +112,4 @@ output.pack()
 output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя") # надпись в начале
-window.mainloop()                                                                                                  # upd v0.4.0 coming soon...
+window.mainloop()                                                                                                  # upd v0.4.0.
