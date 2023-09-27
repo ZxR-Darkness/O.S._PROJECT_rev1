@@ -66,7 +66,7 @@ def main():
 
     elif guess == "kill you":                                           
          PRESS()                                                        
-         output.insert(tk.END, f"{name2} ты идиот")                                                                                    
+         output.insert(tk.END, f"{name2} ты идиот")                                                                                   
  
 
     elif guess == "god":
@@ -109,5 +109,5 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы") # надпись в начале
 window.mainloop()                                                                                                  # upd v0.4.0.
