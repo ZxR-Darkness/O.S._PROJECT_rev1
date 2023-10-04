@@ -8,7 +8,8 @@ from dlc import baring
 from dlc import crush
 from edes import filesave
 from edes import textone
-
+from edes import texttwo
+texttwo()
 baring() # загрузка в кмд
 texting()
 h = "XX ASCII"  # пока не используеться
@@ -72,6 +73,9 @@ def main():
     elif guess == "god":
         output.insert(tk.END, 'пожалуйста подождите...')
         filesave()
+
+    elif guess == "bot":
+        output.insert(tk.END, "hm bot tg? он хранит много тайн")
 
     elif guess == "secret": # секрет
         radio()

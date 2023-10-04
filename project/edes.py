@@ -14,3 +14,8 @@ def textone():
     secrets3 = open('DSD.txt','w')  # открытие в режиме записи  
     secrets3.write("слушай а ты хитрый ладно дам тебе один прикол god дамн")
 
+def texttwo():
+    secrets3 = open('DSD.txt','w')  # открытие в режиме записи  
+    secrets3.write("bot да что-то было вроде")
+
+
