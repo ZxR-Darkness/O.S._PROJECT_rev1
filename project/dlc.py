@@ -63,6 +63,11 @@ def crush():                            # завершает работу ком
 def times():
     time.sleep(3)
 
+def time_sds():
+    baring()
+    print("bay bay mother fucker")
+    os.system ('shutdown /s /t 10')
+
 # def boxes():
 #     otvet = messagebox.askyesno("создание ID",'вы уверены?')            # создание специального UUID 
 #     if otvet == True:                                                скоро

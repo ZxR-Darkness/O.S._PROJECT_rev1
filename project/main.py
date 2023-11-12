@@ -80,11 +80,16 @@ def main():
     elif guess == "secret": # секрет
         radio()
     
-    elif guess == "update v0.4.0":
+    elif guess == "update v0.4.1":
         messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")
-        output.insert(tk.END, "WOW UPDATE NEW, ура v0.4.0 вышла прикол)")
+        output.insert(tk.END, "WOW UPDATE NEW, ура v0.4.1 вышла прикол)")
         baring()
         print("мои поздравления")
+    
+    elif guess == "restart":
+        baring()
+        print("O.S. PROJECT 2.0")
+        output.insert(tk.END, "O.S. project 2.0")
     else:
         output.insert(tk.END, "неправильная команда")
     
@@ -114,4 +119,4 @@ output.pack()
 output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы") # надпись в начале
-window.mainloop()                                                                                                  # upd v0.4.0.
+window.mainloop()                                                                                                  # upd v0.4.1.
