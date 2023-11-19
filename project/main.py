@@ -47,6 +47,12 @@ def main():
     elif guess == 'hell': #прикольчик
         output.insert(tk.END, 'мм а ты любишь погоречей')
     
+    elif guess == 'как дела':
+        output.insert(tk.END, "нормально а у тебя?")
+
+    elif guess == 'good place':
+        output.insert(tk.END, "yeah you know english wow")
+    
     elif guess == "сука": #прикольчик
         PRESS()
         output.insert(tk.END, f'{name2} ты совсем офигел?')
@@ -80,9 +86,9 @@ def main():
     elif guess == "secret": # секрет
         radio()
     
-    elif guess == "update v0.4.1":
+    elif guess == "update v0.4.2":
         messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")
-        output.insert(tk.END, "WOW UPDATE NEW, ура v0.4.1 вышла прикол)")
+        output.insert(tk.END, "WOW UPDATE NEW, ура v0.4.2 вышла прикол)")
         baring()
         print("мои поздравления")
     
@@ -119,4 +125,4 @@ output.pack()
 output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы") # надпись в начале
-window.mainloop()                                                                                                  # upd v0.4.1.
+window.mainloop()                                                                                                  # upd v0.4.2.
