@@ -68,12 +68,6 @@ def time_sds():
     print("bay bay mother fucker")
     os.system ('shutdown /s /t 10')
 
-# def boxes():
-#     otvet = messagebox.askyesno("создание ID",'вы уверены?')            # создание специального UUID 
-#     if otvet == True:                                                скоро
-#         print("id create please close programm")
-#     else:
-#         print("id error")
-#         baring()
-#         print('safe error')
+def Osproject():
+    print("что происходит мать вашу?")
     

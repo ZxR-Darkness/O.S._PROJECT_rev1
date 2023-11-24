@@ -6,15 +6,17 @@ from dlc import texting
 from dlc import radio
 from dlc import baring
 from dlc import crush
+from dlc import Osproject
 from edes import filesave
 from edes import textone
 from edes import texttwo
+from edes import texttree
 texttwo()
 baring() # загрузка в кмд
 texting()
 h = "XX ASCII"  # пока не используеться
 Off = 23
-
+texttree()
 def PRESS(): #ввод имени                                 пока не используеться
      global name2                                          
      name2 = entry2.get()
@@ -38,8 +40,11 @@ def main():
         output.insert(tk.END, '')
         textone()
     elif guess == "drag 2": #прикольчик
-
         output.insert(tk.END, 'drag 2 ичо дальше?')
+
+    elif guess2 == "memento mori":
+        output.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
+        output2.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
 
     elif guess == "aegis": #прикольчик
          output.insert(tk.END,'tkaegis boost 2')
@@ -86,16 +91,24 @@ def main():
     elif guess == "secret": # секрет
         radio()
     
-    elif guess == "update v0.4.2":
+    elif guess == "osproject":
         messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")
-        output.insert(tk.END, "WOW UPDATE NEW, ура v0.4.2 вышла прикол)")
+        output.insert(tk.END, "ура стоп что?! v0.4.3 но ведь 0.4.2 последния... что за !*?№;%")
+        Osproject()
         baring()
-        print("мои поздравления")
-    
+        print("я не понимаю почему так?")
+        print("не пойми что происходит но кажется версия 0.4.3 это и есть последний update....")
+        print("этот выход 0.4.3 добваил лишь одну команду и то она ничего не делает о ней можно узнать будет в телеграм боте...")
+        print("этот update должен сказать о том что os.project был сделан по приколу и обновлялся с конца лета")
+        print("я думаю на этом и можно завершить этот небольшой прикол и начать действительно заниматся нормальным проектом")
+        print("а именно P.D.U.    O.S. PROJECT 2.0  эти два проекта действительно будут лучше")
+        print("кстати о телеграм боте я сообщу когда добавится эта новая команда а также часы его работы по МСК")
+        print("на этом всё прощай o.s. project 0.4.3")
+        baring()
     elif guess == "restart":
         baring()
         print("O.S. PROJECT 2.0")
-        output.insert(tk.END, "O.S. project 2.0")
+        output.insert(tk.END, "O.S. project 2.0    2024")
     else:
         output.insert(tk.END, "неправильная команда")
     
