@@ -17,7 +17,6 @@ texting()
 check = {'manto': "manto aio 80 kit", 'me': 'ты? ну ок'}
 h = "XX ASCII"  # пока не используеться
 Off = 23
-texttree()
 def PRESS(): #ввод имени                                 пока не используеться
      global name2                                          
      name2 = entry2.get()
