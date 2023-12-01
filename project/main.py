@@ -10,7 +10,6 @@ from dlc import testing2
 from edes import filesave
 from edes import textone
 from edes import texttwo
-from edes import texttree
 texttwo()
 baring() # загрузка в кмд
 texting()
