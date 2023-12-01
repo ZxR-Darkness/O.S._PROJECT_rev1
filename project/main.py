@@ -127,4 +127,4 @@ output.pack()
 output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы") # надпись в начале
-window.mainloop()                                                                                                  # upd v0.4.2.
+window.mainloop()                                                                                                  # upd v0.4.4.
