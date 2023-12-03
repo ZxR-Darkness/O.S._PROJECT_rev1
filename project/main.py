@@ -10,6 +10,7 @@ from dlc import testing2
 from edes import filesave
 from edes import textone
 from edes import texttwo
+from dlc import exttree
 texttwo()
 baring() # загрузка в кмд
 texting()
@@ -80,7 +81,7 @@ def main():
     elif guess == "kill you":                                           
          PRESS()                                                        
          output.insert(tk.END, f"{name2} ты идиот")                                                                                   
- 
+
 
     elif guess == "god":
         output.insert(tk.END, 'пожалуйста подождите...')
@@ -88,7 +89,7 @@ def main():
 
     elif guess == "bot":
         output.insert(tk.END, "hm bot tg? он хранит много тайн")
-
+        gosa()
     elif guess == "secret": # секрет
         radio()
         btn8 = tk.Button(text='не нажимай я прошу тебя открой файл ERROR', command=testing2)
@@ -100,6 +101,8 @@ def main():
         output.insert(tk.END, "O.S. project 2.0    2024")
     else:
         output.insert(tk.END, "неправильная команда")
+    def gosa():
+        output.insert(tk.END, f"{name2} прими то что ты не можешь принять")
     
 
 
@@ -126,5 +129,5 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы") # надпись в начале
-window.mainloop()                                                                                                  # upd v0.4.4.
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.4") # надпись в начале
+window.mainloop()
