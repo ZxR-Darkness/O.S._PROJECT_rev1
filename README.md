@@ -1,9 +1,6 @@
 O.S. PROJECT
-0.4.3v
+0.4.4v
 - add command
 - edit
 - add exe file v0.4.2
   - last update
-
-
-project close
