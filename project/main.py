@@ -28,7 +28,13 @@ def main():
     output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
     if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
         output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, god, сука, молчи (нинада), hell')   #также приколы и секреты будут отделены друг от друга 
-                                                       
+
+    elif guess == 'привет':
+        output.insert(tk.END, f"{name2} привет!")
+    
+    elif guess == 'пока':
+        output.insert(tk.END, f"{name2} возврайщайся!")
+        
     elif guess == 'me': #прикольчик
         output.insert(tk.END, 'ты? ну ок')
 
@@ -103,11 +109,10 @@ def main():
         output.insert(tk.END, "неправильная команда")
     def gosa():
         output.insert(tk.END, f"{name2} прими то что ты не можешь принять")
-    
 
 
 window = tk.Tk()       # создает окно с кодом
-window.iconbitmap('C:\codes2\project\img\Python.ico')             
+window.iconbitmap('C:\codes2\project\img\Python.ico')            
 # Создаем виджеты
 label = tk.Label(window, text="введи что-нибудь:")                                   # виджеты кнопки, поле для ввода, само окно
 label.pack()
