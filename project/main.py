@@ -105,6 +105,15 @@ def main():
         baring()
         print("O.S. PROJECT 2.0")
         output.insert(tk.END, "O.S. project 2.0    2024")
+    
+    elif guess == "anomaly":
+        output.insert(tk.END , "oh god, give me my camer")
+        output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
+        print(":3")
+        
+    elif guess2 == "foxlolka":
+        output2.insert(tk.END: "darkness?")
+
     else:
         output.insert(tk.END, "неправильная команда")
     def gosa():
