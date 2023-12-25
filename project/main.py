@@ -110,9 +110,9 @@ def main():
         output.insert(tk.END , "oh god, give me my camer")
         output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
         print(":3")
-        
+
     elif guess2 == "foxlolka":
-        output2.insert(tk.END: "darkness?")
+        output2.insert(tk.END, "darkness?")
 
     else:
         output.insert(tk.END, "неправильная команда")
