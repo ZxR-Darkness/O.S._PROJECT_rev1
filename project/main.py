@@ -110,6 +110,8 @@ def main():
         output.insert(tk.END , "oh god, give me my camer")
         output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
         print(":3")
+    elif guess == "новый год":
+        output.insert(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
 
     elif guess2 == "foxlolka":
         output2.insert(tk.END, "darkness?")
