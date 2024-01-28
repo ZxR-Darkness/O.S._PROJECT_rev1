@@ -10,10 +10,24 @@ from dlc import testing2
 from edes import filesave
 from edes import textone
 from edes import texttwo
-from dlc import exttree
+
+
+try:
+    import pygame
+    import progress
+except ImportError:
+    # Если модуль не найден, выполняется данный код
+    import subprocess
+    subprocess.check_call(["pip", "install", "pygame"])  # Установка модуля через pip
+    subprocess.check_call(["pip", "install", "progress"])  # Установка модуля через pip
+    import pygame  # Попытка импорта модуля снова
+    import progress  # Попытка импорта модуля снова
+
+
 texttwo()
 baring() # загрузка в кмд
 texting()
+
 
 check = {'manto': "manto aio 80 kit", 'me': 'ты? ну ок'}
 h = "XX ASCII"  # пока не используеться
@@ -23,6 +37,7 @@ def PRESS(): #ввод имени                                 пока не 
      name2 = entry2.get()
 
 def main():
+    printing = output.insert
     guess = entry.get()
     guess2 = entry2.get()
     output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
@@ -115,15 +130,17 @@ def main():
 
     elif guess2 == "foxlolka":
         output2.insert(tk.END, "darkness?")
+    
+    elif guess == "update":
+        printing(tk.END, "обновление функций!")
 
     else:
         output.insert(tk.END, "неправильная команда")
     def gosa():
         output.insert(tk.END, f"{name2} прими то что ты не можешь принять")
 
-
 window = tk.Tk()       # создает окно с кодом
-window.iconbitmap('C:\codes2\project\img\Python.ico')            
+#window.iconbitmap('C:\codes2\project\img\Python.ico')            
 # Создаем виджеты
 label = tk.Label(window, text="введи что-нибудь:")                                   # виджеты кнопки, поле для ввода, само окно
 label.pack()
@@ -145,5 +162,5 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.4") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.5") # надпись в начале
 window.mainloop()
