@@ -11,17 +11,17 @@ from edes import filesave
 from edes import textone
 from edes import texttwo
 
-
-try:
-    import pygame
-    import progress
-except ImportError:
-    # Если модуль не найден, выполняется данный код
-    import subprocess
-    subprocess.check_call(["pip", "install", "pygame"])  # Установка модуля через pip
-    subprocess.check_call(["pip", "install", "progress"])  # Установка модуля через pip
-    import pygame  # Попытка импорта модуля снова
-    import progress  # Попытка импорта модуля снова
+# пока что так
+# try:
+#     import pygame
+#     import progress
+# except ImportError:
+#     # Если модуль не найден, выполняется данный код
+#     import subprocess
+#     subprocess.check_call(["pip", "install", "pygame"])  # Установка модуля через pip
+#     subprocess.check_call(["pip", "install", "progress"])  # Установка модуля через pip
+#     import pygame  # Попытка импорта модуля снова
+#     import progress  # Попытка импорта модуля снова
 
 
 texttwo()
@@ -43,6 +43,9 @@ def main():
     output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
     if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
         output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, god, сука, молчи (нинада), hell')   #также приколы и секреты будут отделены друг от друга 
+
+    elif guess == "realese":
+        printing(tk.END, "дада релиз")
 
     elif guess == 'привет':
         output.insert(tk.END, f"{name2} привет!")
@@ -164,3 +167,4 @@ output2 = tk.Text(window)
 output2.pack()
 output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.5-realese") # надпись в начале
 window.mainloop()
+#лишь подготвка
