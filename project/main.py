@@ -47,48 +47,48 @@ def main():
         printing(tk.END, "дада релиз")
 
     elif guess == 'привет':
-        output.insert(tk.END, f"{name2} привет!")
+        printing(tk.END, f"{name2} привет!")
     
     elif guess == 'пока':
-        output.insert(tk.END, f"{name2} возврайщайся!")
+        printing(tk.END, f"{name2} возврайщайся!")
         
     elif guess == 'me': #прикольчик
-        output.insert(tk.END, 'ты? ну ок')
+        printing(tk.END, 'ты? ну ок')
 
     elif guess == check:
         print(check)
     elif guess == 'manto': #прикольчик
 
-        output.insert(tk.END, 'manto aio 80 kit')
+        printing(tk.END, 'manto aio 80 kit')
 
     elif guess == 'foxlolka':
-        output.insert(tk.END, '')
+        printing(tk.END, '')
         textone()
     elif guess == "drag 2": #прикольчик
-        output.insert(tk.END, 'drag 2 ичо дальше?')
+        printing(tk.END, 'drag 2 ичо дальше?')
 
     elif guess2 == "memento mori":
-        output.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
+        printing(tk.END, "не надо о ней помнить она сама напомнит о себе...")
         output2.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
 
     elif guess == "aegis": #прикольчик
-         output.insert(tk.END,'tkaegis boost 2')
+         printing(tk.END,'tkaegis boost 2')
 
     elif guess == 'hell': #прикольчик
-        output.insert(tk.END, 'мм а ты любишь погоречей')
+        printing(tk.END, 'мм а ты любишь погоречей')
     
     elif guess == 'как дела':
-        output.insert(tk.END, "нормально а у тебя?")
+        printing(tk.END, "нормально а у тебя?")
 
     elif guess == 'good place':
-        output.insert(tk.END, "yeah you know english wow")
+        printing(tk.END, "yeah you know english wow")
     
     elif guess == "сука": #прикольчик
         PRESS()
-        output.insert(tk.END, f'{name2} ты совсем офигел?')
+        printing(tk.END, f'{name2} ты совсем офигел?')
     elif guess == "молчи": #прикольчик
 
-        output.insert(tk.END,'окей команда принята пооокааа')
+        printing(tk.END,'окей команда принята пооокааа')
         baring()
         crush()
 
@@ -96,22 +96,22 @@ def main():
         baring()          
         x = open('ERROR.txt', 'rt') # файл txt в котором что-то есть
         sms = x.read()              # сам хз что там
-        output.insert(tk.END, sms)
+        printing(tk.END, sms)
     
     elif guess2 == "SECURE":
         box()
 
     elif guess == "kill you":                                           
          PRESS()                                                        
-         output.insert(tk.END, f"{name2} ты идиот")                                                                                   
+         printing(tk.END, f"{name2} ты идиот")                                                                                   
 
 
     elif guess == "god":
-        output.insert(tk.END, 'пожалуйста подождите...')
+        printing(tk.END, 'пожалуйста подождите...')
         filesave()
 
     elif guess == "bot":
-        output.insert(tk.END, "hm bot tg? он хранит много тайн")
+        printing(tk.END, "hm bot tg? он хранит много тайн")
         gosa()
     elif guess == "secret": # секрет
         radio()
@@ -121,14 +121,14 @@ def main():
     elif guess == "restart":
         baring()
         print("O.S. PROJECT 2.0")
-        output.insert(tk.END, "O.S. project 2.0    2024")
+        printing(tk.END, "O.S. project 2.0    2024")
     
     elif guess == "anomaly":
-        output.insert(tk.END , "oh god, give me my camer")
+        printing(tk.END , "oh god, give me my camer")
         output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
         print(":3")
     elif guess == "новый год":
-        output.insert(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
+        printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
 
     elif guess2 == "foxlolka":
         output2.insert(tk.END, "darkness?")
@@ -137,9 +137,9 @@ def main():
         printing(tk.END, "обновление функций!")
 
     else:
-        output.insert(tk.END, "неправильная команда")
+        printing(tk.END, "неправильная команда")
     def gosa():
-        output.insert(tk.END, f"{name2} прими то что ты не можешь принять")
+        printing(tk.END, f"{name2} прими то что ты не можешь принять")
 
 window = tk.Tk()       # создает окно с кодом
 #window.iconbitmap('C:\codes2\project\img\Python.ico')            
