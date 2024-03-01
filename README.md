@@ -1,6 +1,5 @@
 O.S. PROJECT
-0.4.5v
-- add command
-- edit
-- add exe file v0.4.5
-  - last update
+
+В данный момент проект остановлен
+по причине разработки O.S. PROJECT v2.0
+вы можете следить за обновлениями в discord
