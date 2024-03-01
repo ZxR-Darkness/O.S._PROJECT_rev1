@@ -41,10 +41,10 @@ def main():
     guess2 = entry2.get()
     output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
     if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
-        output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, god, сука, молчи (нинада), hell')   #также приколы и секреты будут отделены друг от друга 
+        output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell')   #также приколы и секреты будут отделены друг от друга 
 
-    elif guess == "realese":
-        printing(tk.END, "дада релиз")
+    # elif guess == "realese":
+    #     printing(tk.END, "дада релиз")
 
     elif guess == 'привет':
         printing(tk.END, f"{name2} привет!")
@@ -54,6 +54,7 @@ def main():
         
     elif guess == 'me': #прикольчик
         printing(tk.END, 'ты? ну ок')
+        textone()
 
     elif guess == check:
         print(check)
@@ -134,7 +135,11 @@ def main():
         output2.insert(tk.END, "darkness?")
     
     elif guess == "update":
-        printing(tk.END, "обновление функций!")
+        printing(tk.END, "обновление GUI!")
+    
+    elif guess == "GIDS":
+        printing(tk.END, "ты что делаешь?")
+        texttwo()
 
     else:
         printing(tk.END, "неправильная команда")
@@ -164,6 +169,6 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.5-realese") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.6-alpha") # надпись в начале
 window.mainloop()
 #лишь подготвка
