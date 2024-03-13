@@ -143,6 +143,9 @@ def main():
     elif guess == "GIDS":
         printing(tk.END, "ты что делаешь?")
         texttwo()
+    
+    elif guess == "TEST":
+        printing(tk.END, "TEST TEST TEST TEST")
 
     else:
         printing(tk.END, "неправильная команда")
