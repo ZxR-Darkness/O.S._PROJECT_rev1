@@ -121,11 +121,6 @@ def main():
         radio()
         btn8 = tk.Button(text='не нажимай я прошу тебя открой файл ERROR', command=testing2)
         btn8.pack
-
-    elif guess == "restart":
-        baring()
-        print("O.S. PROJECT 2.0")
-        printing(tk.END, "O.S. project 2.0    2024")
     
     elif guess == "anomaly":
         printing(tk.END , "oh god, give me my camer")
@@ -137,8 +132,6 @@ def main():
     elif guess2 == "foxlolka":
         output2.insert(tk.END, "darkness?")
     
-    elif guess == "update":
-        printing(tk.END, "обновление GUI!")
     
     elif guess == "GIDS":
         printing(tk.END, "ты что делаешь?")
@@ -175,6 +168,6 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n v0.4.6-alpha") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n к сожалению это последния версия я очень надеюсь что кто-то продолжит мой проект \n и сделает его полным \n \n v0.4.6-alpha") # надпись в начале
 window.mainloop()
 #лишь подготвка
