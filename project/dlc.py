@@ -6,7 +6,8 @@ import time
 import webbrowser
 from progress.bar import FillingSquaresBar
 import pygame
-#import uui
+
+"здесь все функции даже выключение ПК"
 def box():
     messagebox.showwarning("ВНИМАНИЕ","ДОСТУП ЗАКРЫТ")  # функция которая открывается в главном файле
     print('чтож пока secret')
