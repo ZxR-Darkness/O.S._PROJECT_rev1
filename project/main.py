@@ -130,7 +130,7 @@ def main():
         printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
 
     elif guess2 == "foxlolka":
-        output2.insert(tk.END, "darkness?")
+        output2.insert(tk.END, "закрыто к сожалению он больше не занимается проектом....")
     
     
     elif guess == "GIDS":
