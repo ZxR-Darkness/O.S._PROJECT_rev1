@@ -4,4 +4,7 @@ O.S. PROJECT
 
 по причине разработки O.S. PROJECT v2.0
 
-вы можете следить за обновлениями в discord
+официальный разработчик zxr_darkness
+"я прощаюсь с этим проектом навсегда"
+
+discord : https://discord.gg/ZDbh8Baggy
