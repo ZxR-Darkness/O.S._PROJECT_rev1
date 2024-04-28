@@ -1,6 +1,5 @@
-O.S. PROJECT v0.4.6. beta
+O.S. PROJECT v0.4.7 coming soon... 
 
-В данный момент проект остановлен
 
 
 официальный разработчик zxr_darkness
