@@ -129,10 +129,6 @@ def main():
         print(":3")
     elif guess == "новый год":
         printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
-
-    elif guess2 == "foxlolka":
-        output2.insert(tk.END, "закрыто к сожалению он больше не занимается проектом....")
-    
     
     elif guess == "GIDS":
         printing(tk.END, "ты что делаешь?")
@@ -141,10 +137,16 @@ def main():
     elif guess == "TEST":
         printing(tk.END, "TEST TEST TEST TEST")
 
+    elif guess == "DARKNESS":
+        printing(tk.END, "а может все таки нет? \n версия 0.4.7 все таки входит похоже")
+
+
+
     else:
         printing(tk.END, "неправильная команда")
     def gosa():
         printing(tk.END, f"{name2} прими то что ты не можешь принять")
+    
 
 window = tk.Tk()       # создает окно с кодом
 #window.iconbitmap('C:\codes2\project\img\Python.ico')            
@@ -169,5 +171,5 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n к сожалению это последния версия я очень надеюсь что кто-то продолжит мой проект \n и сделает его полным \n \n v0.4.6-alpha") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.7") # надпись в начале
 window.mainloop()
