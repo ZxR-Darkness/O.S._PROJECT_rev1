@@ -1,7 +1,9 @@
-O.S. PROJECT v0.4.7 coming soon... 
+O.S. PROJECT v0.4.7 realese
 
 
 
-официальный разработчик zxr_darkness
+
+официальные разработчики
+O.S. TEAMS
 
 discord : https://discord.gg/ZDbh8Baggy
