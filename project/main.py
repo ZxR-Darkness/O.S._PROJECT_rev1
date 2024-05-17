@@ -23,6 +23,7 @@ from dlc import testing2
 from edes import filesave
 from edes import textone
 from edes import texttwo
+from edes import textfour
 
 
 texttwo()
@@ -45,7 +46,7 @@ def main():
     guess2 = entry2.get()
     output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
     if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
-        output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell')   #также приколы и секреты будут отделены друг от друга 
+        output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, update 8, darkness')   #также приколы и секреты будут отделены друг от друга 
 
     # elif guess == "realese":
     #     printing(tk.END, "дада релиз")
@@ -67,7 +68,7 @@ def main():
         printing(tk.END, 'manto aio 80 kit')
 
     elif guess == 'foxlolka':
-        printing(tk.END, '')
+        printing(tk.END, 'секретный файл разблокирован')
         textone()
     elif guess == "drag 2": #прикольчик
         printing(tk.END, 'drag 2 ичо дальше?')
@@ -138,15 +139,23 @@ def main():
         printing(tk.END, "TEST TEST TEST TEST")
 
     elif guess == "DARKNESS":
-        printing(tk.END, "а может все таки нет? \n версия 0.4.7 все таки входит похоже")
+        printing(tk.END, "а может все таки нет? \n версия 0.4.8 все таки выходит похоже")
 
+    elif guess == "update 8":
+        printing(tk.END, "O.S. PROJECT 0.4.8")
+
+    elif guess == "os dev":
+        printing(tk.END, "хм интересно")
+        textfour()
 
 
     else:
         printing(tk.END, "неправильная команда")
     def gosa():
         printing(tk.END, f"{name2} прими то что ты не можешь принять")
-    
+
+
+
 
 window = tk.Tk()       # создает окно с кодом
 #window.iconbitmap('C:\codes2\project\img\Python.ico')            
@@ -171,5 +180,5 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.7") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.8 beta") # надпись в начале
 window.mainloop()
