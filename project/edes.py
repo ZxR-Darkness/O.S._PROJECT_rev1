@@ -13,7 +13,7 @@ def filesave():
     btn.place_configure(x=23,y=23)
 
 def textone():
-    secrets3 = open('DSD2.txt','w')  # открытие в режиме записи  
+    secrets3 = open('project/folder/DSD2.txt','w')  # открытие в режиме записи  
     secrets3.write("???: ты не видел куда босс клал ключ от ПК? \n ???: да всмысле ты не видел?! \n ???: ладно пофиг кароче иди ты нахуй я сам найду ;№*%___os dev___?;*(%)")
     secrets3.close
     
@@ -23,7 +23,7 @@ def texttwo():
     secrets3.close
 
 def texttree():
-    secrets3 = open('files2.txt','w')  # открытие в режиме записи  
+    secrets3 = open('project/folder/files2.txt','w')  # открытие в режиме записи  
     secrets3.write("знаешь что? я не убивал тех кто зашел я лишь указал правильный им путь а дальше они сами решили....")
     secrets3.close
 def textfour():
