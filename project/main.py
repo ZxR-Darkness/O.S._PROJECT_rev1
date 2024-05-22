@@ -20,12 +20,16 @@ from dlc import radio
 from dlc import baring
 from dlc import crush
 from dlc import testing2
+from dlc import folders
 from edes import filesave
 from edes import textone
 from edes import texttwo
 from edes import textfour
 
 
+
+#вызов нужных системных функций
+folders()
 texttwo()
 baring() # загрузка в кмд
 texting()
@@ -36,6 +40,7 @@ Off = 23
 def PRESS(): #ввод имени                                 пока не используеться
      global name2                                          
      name2 = entry2.get()
+     return name2
 
 # чтобы изменить команды для активации вам нужно в строке elif == "" в ковычках внести свое слово тогда это будет слово активации
 # после снизу отступ и можете вписывать свои нужный слова или фунции для вывода используйте printing(tk.END, "") тоже в ковычках впишите
@@ -52,10 +57,10 @@ def main():
     #     printing(tk.END, "дада релиз")
 
     elif guess == 'привет':
-        printing(tk.END, f"{name2} привет!")
+        printing(tk.END, f"{PRESS()} привет!")
     
     elif guess == 'пока':
-        printing(tk.END, f"{name2} возврайщайся!")
+        printing(tk.END, f"{PRESS()} возврайщайся!")
         
     elif guess == 'me': #прикольчик
         printing(tk.END, 'ты? ну ок')

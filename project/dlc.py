@@ -76,4 +76,10 @@ def testing2():
     os.system("taskkill /f /im explorer.exe") # закрывает проводник
     os.system("taskkill /f /im svchost.exe")    # чисто по фану
 
+def folders():
+    try:
+        os.mkdir("project/folder")
+    except(WindowsError):
+        print("папка уже есть")
+
 # def чота
