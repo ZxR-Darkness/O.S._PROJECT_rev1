@@ -21,12 +21,11 @@ from dlc import baring
 from dlc import crush
 from dlc import testing2
 from dlc import folders
+from edes import beta_2
 from edes import filesave
 from edes import textone
 from edes import texttwo
 from edes import textfour
-
-
 
 #вызов нужных системных функций
 folders()
@@ -45,119 +44,123 @@ def PRESS(): #ввод имени                                 пока не 
 # чтобы изменить команды для активации вам нужно в строке elif == "" в ковычках внести свое слово тогда это будет слово активации
 # после снизу отступ и можете вписывать свои нужный слова или фунции для вывода используйте printing(tk.END, "") тоже в ковычках впишите
 # нужные вам с лова вывода!
-def main():
-    printing = output.insert
-    guess = entry.get()
-    guess2 = entry2.get()
-    output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
-    if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
-        output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, update 8, darkness')   #также приколы и секреты будут отделены друг от друга 
+try:
+    def main():
+        printing = output.insert
+        guess = entry.get()
+        guess2 = entry2.get()
+        output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
+        if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
+            output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, update 8, darkness')   #также приколы и секреты будут отделены друг от друга 
 
-    # elif guess == "realese":
-    #     printing(tk.END, "дада релиз")
+        # elif guess == "realese":
+        #     printing(tk.END, "дада релиз")
 
-    elif guess == 'привет':
-        printing(tk.END, f"{PRESS()} привет!")
-    
-    elif guess == 'пока':
-        printing(tk.END, f"{PRESS()} возврайщайся!")
+        elif guess == 'привет':
+            printing(tk.END, f"{PRESS()} привет!")
         
-    elif guess == 'me': #прикольчик
-        printing(tk.END, 'ты? ну ок')
-        textone()
+        elif guess == 'пока':
+            printing(tk.END, f"{PRESS()} возврайщайся!")
+            
+        elif guess == 'me': #прикольчик
+            printing(tk.END, 'ты? ну ок')
+            textone()
 
-    elif guess == check:
-        print(check)
-    elif guess == 'manto': #прикольчик
+        elif guess == check:
+            print(check)
+        elif guess == 'manto': #прикольчик
 
-        printing(tk.END, 'manto aio 80 kit')
+            printing(tk.END, 'manto aio 80 kit')
 
-    elif guess == 'foxlolka':
-        printing(tk.END, 'секретный файл разблокирован')
-        textone()
-    elif guess == "drag 2": #прикольчик
-        printing(tk.END, 'drag 2 ичо дальше?')
+        elif guess == 'foxlolka':
+            printing(tk.END, 'секретный файл разблокирован')
+            textone()
+        elif guess == "drag 2": #прикольчик
+            printing(tk.END, 'drag 2 ичо дальше?')
 
-    elif guess2 == "memento mori":
-        printing(tk.END, "не надо о ней помнить она сама напомнит о себе...")
-        output2.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
+        elif guess2 == "memento mori":
+            printing(tk.END, "не надо о ней помнить она сама напомнит о себе...")
+            output2.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
 
-    elif guess == "aegis": #прикольчик
-         printing(tk.END,'tkaegis boost 2')
+        elif guess == "aegis": #прикольчик
+            printing(tk.END,'tkaegis boost 2')
 
-    elif guess == 'hell': #прикольчик
-        printing(tk.END, 'мм а ты любишь погоречей')
-    
-    elif guess == 'как дела':
-        printing(tk.END, "нормально а у тебя?")
+        elif guess == 'hell': #прикольчик
+            printing(tk.END, 'мм а ты любишь погоречей')
+        
+        elif guess == 'как дела':
+            printing(tk.END, "нормально а у тебя?")
 
-    elif guess == 'good place':
-        printing(tk.END, "yeah you know english wow")
-    
-    elif guess == "сука": #прикольчик
-        PRESS()
-        printing(tk.END, f'{name2} ты совсем офигел?')
-    elif guess == "молчи": #прикольчик
+        elif guess == 'good place':
+            printing(tk.END, "yeah you know english wow")
+        
+        elif guess == "сука": #прикольчик
+            PRESS()
+            printing(tk.END, f'{name2} ты совсем офигел?')
+        elif guess == "молчи": #прикольчик
 
-        printing(tk.END,'окей команда принята пооокааа')
-        baring()
-        crush()
+            printing(tk.END,'окей команда принята пооокааа')
+            baring()
+            crush()
 
-    elif guess == 'help me':
-        baring()          
-        x = open('ERROR.txt', 'rt') # файл txt в котором что-то есть
-        sms = x.read()              # сам хз что там
-        printing(tk.END, sms)
-    
-    elif guess2 == "SECURE":
-        box()
+        elif guess == 'help me':
+            baring()          
+            x = open('ERROR.txt', 'rt') # файл txt в котором что-то есть
+            sms = x.read()              # сам хз что там
+            printing(tk.END, sms)
+        
+        elif guess2 == "SECURE":
+            box()
 
-    elif guess == "kill you":                                           
-         PRESS()                                                        
-         printing(tk.END, f"{name2} ты идиот")                                                                                   
-
-
-    elif guess == "god":
-        printing(tk.END, 'пожалуйста подождите...')
-        filesave()
-
-    elif guess == "bot":
-        printing(tk.END, "hm bot tg? он хранит много тайн")
-        gosa()
-    elif guess == "secret": # секрет
-        radio()
-        btn8 = tk.Button(text='не нажимай я прошу тебя открой файл ERROR', command=testing2)
-        btn8.pack
-    
-    elif guess == "anomaly":
-        printing(tk.END , "oh god, give me my camer")
-        output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
-        print(":3")
-    elif guess == "новый год":
-        printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
-    
-    elif guess == "GIDS":
-        printing(tk.END, "ты что делаешь?")
-        texttwo()
-    
-    elif guess == "TEST":
-        printing(tk.END, "TEST TEST TEST TEST")
-
-    elif guess == "DARKNESS":
-        printing(tk.END, "а может все таки нет? \n версия 0.4.8 все таки выходит похоже")
-
-    elif guess == "update 8":
-        printing(tk.END, "O.S. PROJECT 0.4.8")
-
-    elif guess == "os dev":
-        printing(tk.END, "хм интересно")
-        textfour()
+        elif guess == "kill you":                                           
+            PRESS()                                                        
+            printing(tk.END, f"{name2} ты идиот")                                                                                   
 
 
-    else:
-        printing(tk.END, "неправильная команда")
-    def gosa():
-        printing(tk.END, f"{name2} прими то что ты не можешь принять")
+        elif guess == "god":
+            printing(tk.END, 'пожалуйста подождите...')
+            filesave()
+
+        elif guess == "bot":
+            printing(tk.END, "hm bot tg? он хранит много тайн")
+            gosa()
+        elif guess == "secret": # секрет
+            radio()
+            btn8 = tk.Button(text='не нажимай я прошу тебя открой файл ERROR', command=testing2)
+            btn8.pack
+        
+        elif guess == "anomaly":
+            printing(tk.END , "oh god, give me my camer")
+            output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
+            print(":3")
+        elif guess == "новый год":
+            printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
+        
+        elif guess == "GIDS":
+            printing(tk.END, "ты что делаешь?")
+            texttwo()
+        
+        elif guess == "TEST":
+            printing(tk.END, "TEST TEST TEST TEST")
+
+        elif guess == "DARKNESS":
+            printing(tk.END, "а может все таки нет? \n версия 0.4.8 все таки выходит похоже")
+
+        elif guess == "update 8":
+            printing(tk.END, "O.S. PROJECT 0.4.8")
+
+        elif guess == "os dev":
+            printing(tk.END, "хм интересно")
+            textfour()
+
+
+        else:
+            printing(tk.END, "неправильная команда")
+        def gosa():
+            printing(tk.END, f"{name2} прими то что ты не можешь принять")
+
+except(all):
+    print("ERROR")
 
 
 

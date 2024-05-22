@@ -15,17 +15,30 @@ def filesave():
 def textone():
     secrets3 = open('project/folder/DSD2.txt','w')  # открытие в режиме записи  
     secrets3.write("???: ты не видел куда босс клал ключ от ПК? \n ???: да всмысле ты не видел?! \n ???: ладно пофиг кароче иди ты нахуй я сам найду ;№*%___os dev___?;*(%)")
-    secrets3.close
+    secrets3.close  # закрытие для оптимизации кода
     
 def texttwo():
     secrets3 = open('project/folder/Dsd3.txt','w')  # открытие в режиме записи  
     secrets3.write("bot да что-то было вроде ?foxlolka?")
-    secrets3.close
+    secrets3.close  # закрытие для оптимизации кода
 
 def texttree():
     secrets3 = open('project/folder/files2.txt','w')  # открытие в режиме записи  
     secrets3.write("знаешь что? я не убивал тех кто зашел я лишь указал правильный им путь а дальше они сами решили....")
-    secrets3.close
+    secrets3.close # закрытие для оптимизации кода
 def textfour():
     secrets4 = open('Update.txt','w')  # открытие в режиме записи  
     secrets4.write("UPDATE 0.4.8")
+    secrets4.close # закрытие для оптимизации кода
+
+
+# beta функции
+def beta_2():
+    try:
+        secrets5 = open("project/beta_folder/text.txt", 'w+')    # открытие в режиме чтения
+        secrets5.write("beta test file")
+        secrets5.read()
+        print(*secrets5)
+        secrets5.close  # закрытие для оптимизации кода
+    except(FileNotFoundError):
+        print("файл не найден")

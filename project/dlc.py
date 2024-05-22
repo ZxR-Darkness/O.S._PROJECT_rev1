@@ -42,7 +42,7 @@ def radio():
     root.mainloop()
 
 def texting():
-    f = open('ERROR.txt','w')
+    f = open('project/folder/ERROR.txt','w')
     f.write("он еще не знает напиши SECURE")
 
 def baring():                                   # прогресс бар
@@ -79,7 +79,8 @@ def testing2():
 def folders():
     try:
         os.mkdir("project/folder")
+        os.mkdir("project/beta_folder")
     except(WindowsError):
-        print("папка уже есть")
+        print("папки уже есть")
 
 # def чота
