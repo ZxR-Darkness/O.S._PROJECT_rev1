@@ -23,7 +23,7 @@ from dlc import baring
 from dlc import crush
 from dlc import testing2
 from dlc import folders
-from edes import beta_2
+from edes import beta_3
 from edes import filesave
 from edes import textone
 from edes import texttwo
@@ -155,6 +155,10 @@ try:
         elif guess == "os dev":
             printing(tk.END, "хм интересно")
             textfour()
+        
+        elif guess == "beta":
+            printing("test test test")
+            beta_3()
 
 
         else:
