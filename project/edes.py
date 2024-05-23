@@ -15,17 +15,17 @@ try:
         btn.place_configure(x=23,y=23)
 
     def textone():
-        secrets3 = open('project/secrets/DSD2.txt','w')  # открытие в режиме записи  
+        secrets3 = open('project/secrets/empty.txt','w')  # открытие в режиме записи  
         secrets3.write("???: ты не видел куда босс клал ключ от ПК? \n ???: да всмысле ты не видел?! \n ???: ладно пофиг кароче иди ты нахуй я сам найду ;№*%___os dev___?;*(%)")
         secrets3.close  # закрытие для оптимизации кода
         
     def texttwo():
-        secrets3 = open('project/secrets/Dsd3.txt','w')  # открытие в режиме записи  
+        secrets3 = open('project/secrets/ERROR.txt','w')  # открытие в режиме записи  
         secrets3.write("bot да что-то было вроде ?foxlolka?")
         secrets3.close  # закрытие для оптимизации кода
 
     def texttree():
-        secrets3 = open('project/secrets/files2.txt','w')  # открытие в режиме записи  
+        secrets3 = open('project/secrets/what.txt','w')  # открытие в режиме записи  
         secrets3.write("знаешь что? я не убивал тех кто зашел я лишь указал правильный им путь а дальше они сами решили....")
         secrets3.close # закрытие для оптимизации кода
     def textfour():
