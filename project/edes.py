@@ -37,7 +37,7 @@ except(all):
 
 
 # beta функции
-def beta_2():
+def beta_3():
     try:
         secrets5 = open("project/beta_folder/text.txt", 'w+')    # открытие в режиме чтения
         secrets5.write("beta test file")
