@@ -37,12 +37,12 @@ except(all):
 
 
 # beta функции
-def beta_3():
-    try:
-        secrets5 = open("project/beta_folder/text.txt", 'w+')    # открытие в режиме чтения
-        secrets5.write("beta test file")
-        secrets5.read()
-        print(*secrets5)
-        secrets5.close  # закрытие для оптимизации кода
-    except(FileNotFoundError):
-        print("файл не найден")
+# def beta_1():
+#     try:
+#         secrets5 = open("project/beta_folder/text.txt", 'w+')    # открытие в режиме чтения
+#         secrets5.write("beta test file")
+#         secrets5.read()
+#         print(*secrets5)
+#         secrets5.close  # закрытие для оптимизации кода
+#     except(FileNotFoundError):
+#         print("файл не найден")

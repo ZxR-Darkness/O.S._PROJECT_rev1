@@ -23,7 +23,7 @@ from dlc import baring
 from dlc import crush
 from dlc import testing2
 from dlc import folders
-from edes import beta_3
+# from edes import beta_1
 from edes import filesave
 from edes import textone
 from edes import texttwo
@@ -149,16 +149,16 @@ try:
         elif guess == "DARKNESS":
             printing(tk.END, "а может все таки нет? \n версия 0.4.8 все таки выходит похоже")
 
-        elif guess == "update 8":
+        elif guess == "update 4.8":
             printing(tk.END, "O.S. PROJECT 0.4.8")
 
         elif guess == "os dev":
             printing(tk.END, "хм интересно")
             textfour()
         
-        elif guess == "beta":
-            printing("test test test")
-            beta_3()
+        # elif guess == "beta":
+        #     printing("test test test")
+        #     beta_1()
 
 
         else:
@@ -194,5 +194,5 @@ output.pack()
 #2
 output2 = tk.Text(window)
 output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.8 beta") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.8 realese") # надпись в начале
 window.mainloop()

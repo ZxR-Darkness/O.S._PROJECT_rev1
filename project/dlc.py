@@ -84,4 +84,3 @@ def folders():
     except(WindowsError):
         print("папки уже есть")
 
-# def чота
