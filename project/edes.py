@@ -3,33 +3,37 @@
 import tkinter as tk
 import os
 
-"здесь все файлы которые создавал проект можете ознакомится что там было"
-def filesave():
-    secrets2 = open('DSD.txt','w')  # открытие в режиме записи   
-    secrets2.write("его нету и не будет никогда.... ладно слушай скажу даже бог не знает что в этой проге ты можешь продолжить но я бы советовал уйти \n но если хочешь продолжить то вот (GIDS)")
-    defing = tk.Tk()
+try:
 
-    btn = tk.Button(defing, text="create file", command=filesave )
-    btn.place_configure(x=23,y=23)
+    "здесь все файлы которые создавал проект можете ознакомится что там было"
+    def filesave():
+        secrets2 = open('project/secrets/DSD.txt','w')  # открытие в режиме записи   
+        secrets2.write("его нету и не будет никогда.... ладно слушай скажу даже бог не знает что в этой проге ты можешь продолжить но я бы советовал уйти \n но если хочешь продолжить то вот (GIDS)")
+        defing = tk.Tk()
 
-def textone():
-    secrets3 = open('project/folder/DSD2.txt','w')  # открытие в режиме записи  
-    secrets3.write("???: ты не видел куда босс клал ключ от ПК? \n ???: да всмысле ты не видел?! \n ???: ладно пофиг кароче иди ты нахуй я сам найду ;№*%___os dev___?;*(%)")
-    secrets3.close  # закрытие для оптимизации кода
-    
-def texttwo():
-    secrets3 = open('project/folder/Dsd3.txt','w')  # открытие в режиме записи  
-    secrets3.write("bot да что-то было вроде ?foxlolka?")
-    secrets3.close  # закрытие для оптимизации кода
+        btn = tk.Button(defing, text="create file", command=filesave )
+        btn.place_configure(x=23,y=23)
 
-def texttree():
-    secrets3 = open('project/folder/files2.txt','w')  # открытие в режиме записи  
-    secrets3.write("знаешь что? я не убивал тех кто зашел я лишь указал правильный им путь а дальше они сами решили....")
-    secrets3.close # закрытие для оптимизации кода
-def textfour():
-    secrets4 = open('Update.txt','w')  # открытие в режиме записи  
-    secrets4.write("UPDATE 0.4.8")
-    secrets4.close # закрытие для оптимизации кода
+    def textone():
+        secrets3 = open('project/secrets/DSD2.txt','w')  # открытие в режиме записи  
+        secrets3.write("???: ты не видел куда босс клал ключ от ПК? \n ???: да всмысле ты не видел?! \n ???: ладно пофиг кароче иди ты нахуй я сам найду ;№*%___os dev___?;*(%)")
+        secrets3.close  # закрытие для оптимизации кода
+        
+    def texttwo():
+        secrets3 = open('project/secrets/Dsd3.txt','w')  # открытие в режиме записи  
+        secrets3.write("bot да что-то было вроде ?foxlolka?")
+        secrets3.close  # закрытие для оптимизации кода
+
+    def texttree():
+        secrets3 = open('project/secrets/files2.txt','w')  # открытие в режиме записи  
+        secrets3.write("знаешь что? я не убивал тех кто зашел я лишь указал правильный им путь а дальше они сами решили....")
+        secrets3.close # закрытие для оптимизации кода
+    def textfour():
+        secrets4 = open('Update.txt','w')  # открытие в режиме записи  
+        secrets4.write("UPDATE 0.4.8")
+        secrets4.close # закрытие для оптимизации кода
+except(all):
+    print("ошибка файлов")
 
 
 # beta функции

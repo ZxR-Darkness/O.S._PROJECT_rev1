@@ -14,6 +14,8 @@ except ImportError:
 
 import tkinter as tk
 from tkinter import messagebox          #импорт нужных файлов и модулей
+import traceback
+import logging
 from dlc import box
 from dlc import texting
 from dlc import radio
@@ -26,12 +28,12 @@ from edes import filesave
 from edes import textone
 from edes import texttwo
 from edes import textfour
-
-#вызов нужных системных функций
-folders()
-texttwo()
-baring() # загрузка в кмд
-texting()
+try:
+    #вызов нужных системных функций
+    folders()
+    baring() # загрузка в кмд
+except Exception as e:
+    logging.error(traceback.format_exc())
 
 check = {'manto': "manto aio 80 kit", 'me': 'ты? ну ок'}
 h = "XX ASCII"  # пока не используеться
@@ -51,13 +53,14 @@ try:
         guess2 = entry2.get()
         output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
         if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
-            output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, update 8, darkness')   #также приколы и секреты будут отделены друг от друга 
+            output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, update 8, darkness, GIDS')
 
         # elif guess == "realese":
         #     printing(tk.END, "дада релиз")
 
         elif guess == 'привет':
             printing(tk.END, f"{PRESS()} привет!")
+            texting()
         
         elif guess == 'пока':
             printing(tk.END, f"{PRESS()} возврайщайся!")
@@ -160,8 +163,7 @@ try:
             printing(tk.END, f"{name2} прими то что ты не можешь принять")
 
 except(all):
-    print("ERROR")
-
+    print("ошибка команд")
 
 
 
