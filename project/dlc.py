@@ -5,7 +5,6 @@ import os
 import time
 import webbrowser
 from progress.bar import FillingSquaresBar
-import pygame
 
 "здесь все функции даже выключение ПК"
 def box():
