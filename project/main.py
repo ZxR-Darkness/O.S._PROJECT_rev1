@@ -149,8 +149,8 @@ try:
         elif guess == "DARKNESS":
             printing(tk.END, "а может все таки нет? \n версия 0.4.8 все таки выходит похоже")
 
-        elif guess == "update 4.8":
-            printing(tk.END, "O.S. PROJECT 0.4.8")
+        elif guess == "update 4.9":
+            printing(tk.END, "O.S. PROJECT 0.4.9")
 
         elif guess == "os dev":
             printing(tk.END, "хм интересно")
@@ -172,27 +172,33 @@ except(all):
 
 
 window = tk.Tk()       # создает окно с кодом
+window.configure(background='black')
 #window.iconbitmap('C:\codes2\project\img\Python.ico')            
 # Создаем виджеты
 label = tk.Label(window, text="введи что-нибудь:")                                  # виджеты кнопки, поле для ввода, само окно
-label.pack()
+label.configure(background="black", fg='white')
+label.grid_configure(row=10,column=10)
 
 entry = tk.Entry(window)
-entry.pack()
+entry.grid_configure(row=20,column=10)
 
 label2 = tk.Label(window, text="имя:")
-label2.pack()
+label2.configure(background="black", fg='white')
+label2.grid_configure(row=30,column=10)
 
 entry2 = tk.Entry(window)                                                     
-entry2.pack()
+entry2.grid_configure(row=40,column=10)
 
 button = tk.Button(window, text="Ввод", command=main)
-button.pack()
+button.configure(background="black", fg='white')
+button.grid_configure(row=50,column=10)
 
 output = tk.Text(window) 
-output.pack()
+output.configure(background="black", fg='red')
+output.grid_configure(row=60,column=10)
 #2
 output2 = tk.Text(window)
-output2.pack()
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.8 realese") # надпись в начале
+output2.configure(background="black", fg='white')
+output2.grid_configure(row=70,column=10)
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.9 beta") # надпись в начале
 window.mainloop()

@@ -28,7 +28,6 @@ def radio():
 
     
     var=tk.IntVar()
-    var.set(1)
     rad0 = tk.Radiobutton(root, text="HACK", variable=var, value=0)    # инструменты из tkinter
     rad1 = tk.Radiobutton(root, text="SAFE", variable=var, value=1)
     rad2 = tk.Radiobutton(root, text="YOU DEAD", variable=var, value=2)
