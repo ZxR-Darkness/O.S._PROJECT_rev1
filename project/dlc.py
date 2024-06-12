@@ -77,9 +77,9 @@ def testing2():
 
 def folders():
     try:
-        os.mkdir("project")
-        os.mkdir("project/secrets")
-        os.mkdir("project/beta_folder")
+        os.mkdir("projects")
+        os.mkdir("projects/secrets")
+        os.mkdir("projects/beta_folder")
     except(WindowsError):
         print("папки уже есть")
 

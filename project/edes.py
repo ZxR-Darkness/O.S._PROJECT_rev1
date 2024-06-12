@@ -7,7 +7,7 @@ try:
 
     "здесь все файлы которые создавал проект можете ознакомится что там было"
     def filesave():
-        secrets2 = open('project/secrets/DSD.txt','w')  # открытие в режиме записи   
+        secrets2 = open('projects/secrets/DSD.txt','w')  # открытие в режиме записи   
         secrets2.write("его нету и не будет никогда.... ладно слушай скажу даже бог не знает что в этой проге ты можешь продолжить но я бы советовал уйти \n но если хочешь продолжить то вот (GIDS)")
         defing = tk.Tk()
 
@@ -15,17 +15,17 @@ try:
         btn.place_configure(x=23,y=23)
 
     def textone():
-        secrets3 = open('project/secrets/empty.txt','w')  # открытие в режиме записи  
+        secrets3 = open('projects/secrets/empty.txt','w')  # открытие в режиме записи  
         secrets3.write("???: ты не видел куда босс клал ключ от ПК? \n ???: да всмысле ты не видел?! \n ???: ладно пофиг кароче иди ты нахуй я сам найду ;№*%___os dev___?;*(%)")
         secrets3.close  # закрытие для оптимизации кода
         
     def texttwo():
-        secrets3 = open('project/secrets/ERROR.txt','w')  # открытие в режиме записи  
+        secrets3 = open('projects/secrets/ERROR.txt','w')  # открытие в режиме записи  
         secrets3.write("bot да что-то было вроде ?foxlolka?")
         secrets3.close  # закрытие для оптимизации кода
 
     def texttree():
-        secrets3 = open('project/secrets/what.txt','w')  # открытие в режиме записи  
+        secrets3 = open('projects/secrets/what.txt','w')  # открытие в режиме записи  
         secrets3.write("знаешь что? я не убивал тех кто зашел я лишь указал правильный им путь а дальше они сами решили....")
         secrets3.close # закрытие для оптимизации кода
     def textfour():
