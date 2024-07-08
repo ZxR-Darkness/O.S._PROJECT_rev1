@@ -173,6 +173,7 @@ except(all):
 
 window = tk.Tk()       # создает окно с кодом
 window.configure(background='black')
+window.title('O.S. PROJECT 0.4.9')
 #window.iconbitmap('C:\codes2\project\img\Python.ico')            
 # Создаем виджеты
 label = tk.Label(window, text="введи что-нибудь:")                                  # виджеты кнопки, поле для ввода, само окно
