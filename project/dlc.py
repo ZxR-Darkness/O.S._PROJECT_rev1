@@ -40,7 +40,7 @@ def radio():
     root.mainloop()
 
 def texting():
-    f = open('project/folder/ERROR.txt','w')
+    f = open('projects/secrets/ERROR.txt','w')
     f.write("он еще не знает напиши SECURE")
 
 def baring():                                   # прогресс бар
