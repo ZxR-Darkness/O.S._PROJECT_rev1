@@ -7,9 +7,13 @@ class main():
     def __init__(self):
         root = tk.Tk()
         root.title('O.S. PACKS')
-        root.geometry('400x300')
+        root.geometry('400x400')
+        root["bg"] = "black"
 
-        button = tk.Button(text="ddd", bg="black", fg="white")
+        text1 = tk.Label(text="text text text", bg="red", fg="white")
+        text1.pack()
+
+        button = tk.Button(text="Button", bg="black", fg="white")
         button.pack()
 
         root.mainloop()
