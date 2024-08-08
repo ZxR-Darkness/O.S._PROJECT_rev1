@@ -28,6 +28,7 @@ from edes import filesave
 from edes import textone
 from edes import texttwo
 from edes import textfour
+from edes import textfive
 try:
     #вызов нужных системных функций
     folders()
@@ -155,6 +156,10 @@ try:
         elif guess == "os dev":
             printing(tk.END, "хм интересно")
             textfour()
+        
+        elif guess == "OS_UPGRADE":
+            print("в скором времени оно вернется из глубин ада")
+            textfive()
         
         # elif guess == "beta":
         #     printing("test test test")

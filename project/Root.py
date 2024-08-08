@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
 
-
-
+# нароботки ZxR_Darkness
+# "в планах было добавить не только одно основное окно"
+# "второе окно было-бы как numpad для pin-code например чтобы искать более глубокие секреты проекта"
 class main():
     def __init__(self):
         root = tk.Tk()
@@ -19,3 +20,5 @@ class main():
         root.mainloop()
 
 main()
+
+"к сожалению мои руки не дошли до того чтобы реализовать это"

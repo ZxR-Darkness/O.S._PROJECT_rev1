@@ -82,3 +82,6 @@ def folders():
     except(WindowsError):
         print("папки уже есть")
 
+def timers():
+    baring()
+    print("Yup 'NE' it's new soft?")
