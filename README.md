@@ -2,7 +2,7 @@ O.S. PROJECT v0.4.9 CLOSED
 
 
 
-официальные разработчик
+официальные разработчики
 O.S. TEAM
 
 discord : https://discord.gg/ZDbh8Baggy
