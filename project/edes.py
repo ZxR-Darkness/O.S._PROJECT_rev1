@@ -30,7 +30,7 @@ try:
         secrets3.close # закрытие для оптимизации кода
     def textfour():
         secrets4 = open('Update.txt','w')  # открытие в режиме записи  
-        secrets4.write("UPDATE 0.4.9 beta")
+        secrets4.write("UPDATE 0.5.0 beta")
         secrets4.close # закрытие для оптимизации кода
     def textfive():
         secrets4 = open('New App.txt','w')  # открытие в режиме записи  

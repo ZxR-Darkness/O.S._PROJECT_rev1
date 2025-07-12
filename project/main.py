@@ -69,6 +69,9 @@ try:
         elif guess == 'me': #прикольчик
             printing(tk.END, 'ты? ну ок')
             textone()
+        
+        elif guess == 'UPDATE':
+            printing(tk.END, "VERSION 0.5.0")
 
         elif guess == check:
             print(check)
@@ -102,7 +105,6 @@ try:
             PRESS()
             printing(tk.END, f'{name2} ты совсем офигел?')
         elif guess == "молчи": #прикольчик
-
             printing(tk.END,'окей команда принята пооокааа')
             baring()
             crush()
@@ -148,10 +150,7 @@ try:
             printing(tk.END, "TEST TEST TEST TEST")
 
         elif guess == "DARKNESS":
-            printing(tk.END, "а может все таки нет? \n версия 0.4.8 все таки выходит похоже")
-
-        elif guess == "update 4.9":
-            printing(tk.END, "O.S. PROJECT 0.4.9")
+            printing(tk.END, "а может все таки нет? \n версия 0.5.0 все таки выходит похоже")
 
         elif guess == "os dev":
             printing(tk.END, "хм интересно")
@@ -178,7 +177,7 @@ except(all):
 
 window = tk.Tk()       # создает окно с кодом
 window.configure(background='black')
-window.title('O.S. PROJECT 0.4.9')
+window.title('O.S. PROJECT 0.5.0')
 #window.iconbitmap('C:\codes2\project\img\Python.ico')            
 # Создаем виджеты
 label = tk.Label(window, text="введи что-нибудь:")                                  # виджеты кнопки, поле для ввода, само окно
@@ -206,5 +205,5 @@ output.grid_configure(row=60,column=10)
 output2 = tk.Text(window)
 output2.configure(background="black", fg='white')
 output2.grid_configure(row=70,column=10)
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.4.9 beta") # надпись в начале
+output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.5.0 REALESE") # надпись в начале
 window.mainloop()
