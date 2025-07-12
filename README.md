@@ -1,4 +1,4 @@
-O.S. PROJECT v0.4.9 CLOSED
+O.S. PROJECT v0.4.9
 
 
 
