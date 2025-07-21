@@ -1,4 +1,4 @@
-O.S. PROJECT v0.5.0 - beta 1
+O.S. PROJECT v0.5.0 - beta 2
 
 
 
