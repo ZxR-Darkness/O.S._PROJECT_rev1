@@ -54,7 +54,7 @@ try:
         guess2 = entry2.get()
         output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
         if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
-            output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, update 8, darkness, GIDS')
+            output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, UPDATE, darkness, DARK')
 
         # elif guess == "realese":
         #     printing(tk.END, "дада релиз")
@@ -68,7 +68,6 @@ try:
             
         elif guess == 'me': #прикольчик
             printing(tk.END, 'ты? ну ок')
-            textone()
         
         elif guess == 'UPDATE':
             printing(tk.END, "VERSION 0.5.0")
@@ -79,7 +78,7 @@ try:
 
             printing(tk.END, 'manto aio 80 kit')
 
-        elif guess == 'foxlolka':
+        elif guess == 'secret':
             printing(tk.END, 'секретный файл разблокирован')
             textone()
         elif guess == "drag 2": #прикольчик
@@ -130,14 +129,14 @@ try:
         elif guess == "bot":
             printing(tk.END, "hm bot tg? он хранит много тайн")
             gosa()
-        elif guess == "secret": # секрет
+        elif guess == "secretTWO": # секрет
             radio()
             btn8 = tk.Button(text='не нажимай я прошу тебя открой файл ERROR', command=testing2)
             btn8.pack
         
         elif guess == "anomaly":
             printing(tk.END , "oh god, give me my camer")
-            output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer")
+            output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer    GIDS")
             print(":3")
         elif guess == "новый год":
             printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
@@ -156,7 +155,7 @@ try:
             printing(tk.END, "хм интересно")
             textfour()
         
-        elif guess == "OS_UPGRADE":
+        elif guess == "DARK":
             print("в скором времени оно вернется из глубин ада")
             textfive()
         

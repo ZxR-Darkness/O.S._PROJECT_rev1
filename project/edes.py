@@ -8,7 +8,7 @@ try:
     "здесь все файлы которые создавал проект можете ознакомится что там было"
     def filesave():
         secrets2 = open('projects/secrets/DSD.txt','w')  # открытие в режиме записи   
-        secrets2.write("его нету и не будет никогда.... ладно слушай скажу даже бог не знает что в этой проге ты можешь продолжить но я бы советовал уйти \n но если хочешь продолжить то вот (GIDS)")
+        secrets2.write("его нету и не будет никогда.... ладно слушай скажу даже бог не знает что в этой проге ты можешь продолжить но я бы советовал уйти \n но если хочешь продолжить то вот secretTWO")
         defing = tk.Tk()
 
         btn = tk.Button(defing, text="create file", command=filesave )
@@ -21,7 +21,7 @@ try:
         
     def texttwo():
         secrets3 = open('projects/secrets/ERROR.txt','w')  # открытие в режиме записи  
-        secrets3.write("bot да что-то было вроде ?foxlolka?")
+        secrets3.write("bot да что-то было вроде ?? secret  ")
         secrets3.close  # закрытие для оптимизации кода
 
     def texttree():
@@ -34,7 +34,7 @@ try:
         secrets4.close # закрытие для оптимизации кода
     def textfive():
         secrets4 = open('New App.txt','w')  # открытие в режиме записи  
-        secrets4.write("O.S. PROJECT v2.0 (New Era)")
+        secrets4.write("а что ты тут забыл? хахаха ладно anomaly ")
         secrets4.close # закрытие для оптимизации кода
 except(all):
     print("ошибка файлов")
