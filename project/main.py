@@ -1,208 +1,251 @@
 #главный файл
+import logging
+import traceback
+from typing import Callable, Dict, Optional
+
+import tkinter as tk
+
 try:
     import pygame
     import progress
-
-# except помогает вам сразу запустить программу в VSC так как он отвечает за установку нужных модулей
 except ImportError:
-    # Если модуль не найден, выполняется данный код
-    import subprocess
-    subprocess.check_call(["pip", "install", "pygame"])  # Установка модуля через pip
-    subprocess.check_call(["pip", "install", "progress"])  # Установка модуля через pip
-    import pygame  # Попытка импорта модуля снова
-    import progress  # Попытка импорта модуля снова
+    raise
 
-import tkinter as tk
-from tkinter import messagebox          #импорт нужных файлов и модулей
-import traceback
-import logging
-from dlc import box
-from dlc import texting
-from dlc import radio
-from dlc import baring
-from dlc import crush
-from dlc import testing2
-from dlc import folders
-# from edes import beta_1
-from edes import filesave
-from edes import textone
-from edes import texttwo
-from edes import textfour
-from edes import textfive
-try:
-    #вызов нужных системных функций
-    folders()
-    baring() # загрузка в кмд
-except Exception as e:
-    logging.error(traceback.format_exc())
+from dlc import box, texting, radio, baring, crush, testing2, folders
+from edes import filesave, textone, texttwo, textfour, textfive
 
-check = {'manto': "manto aio 80 kit", 'me': 'ты? ну ок'}
-h = "XX ASCII"  # пока не используеться
-Off = 23
-def PRESS(): #ввод имени                                 пока не используеться
-     global name2                                          
-     name2 = entry2.get()
-     return name2
+logging.basicConfig(
+    level=logging.ERROR,
+    filename='os_project.log',
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
-# чтобы изменить команды для активации вам нужно в строке elif == "" в ковычках внести свое слово тогда это будет слово активации
-# после снизу отступ и можете вписывать свои нужный слова или фунции для вывода используйте printing(tk.END, "") тоже в ковычках впишите
-# нужные вам с лова вывода!
-try:
-    def main():
-        printing = output.insert
-        guess = entry.get()
-        guess2 = entry2.get()
-        output.delete(1.0, tk.END)  # Очищаем поле вывода перед новым выводом
-        if guess == "help":                                                                 #некоторые приколы а также спец. слова для использования других секреток
-            output.insert(tk.END, 'команды: me, manto, drag 2, aegis, help me, kill you, ????, сука, молчи (нинада), hell, UPDATE, darkness, DARK')
-
-        # elif guess == "realese":
-        #     printing(tk.END, "дада релиз")
-
-        elif guess == 'привет':
-            printing(tk.END, f"{PRESS()} привет!")
-            texting()
-        
-        elif guess == 'пока':
-            printing(tk.END, f"{PRESS()} возврайщайся!")
-            
-        elif guess == 'me': #прикольчик
-            printing(tk.END, 'ты? ну ок')
-        
-        elif guess == 'UPDATE':
-            printing(tk.END, "VERSION 0.5.0")
-
-        elif guess == check:
-            print(check)
-        elif guess == 'manto': #прикольчик
-
-            printing(tk.END, 'manto aio 80 kit')
-
-        elif guess == 'secret':
-            printing(tk.END, 'секретный файл разблокирован')
-            textone()
-        elif guess == "drag 2": #прикольчик
-            printing(tk.END, 'drag 2 ичо дальше?')
-
-        elif guess2 == "memento mori":
-            printing(tk.END, "не надо о ней помнить она сама напомнит о себе...")
-            output2.insert(tk.END, "не надо о ней помнить она сама напомнит о себе...")
-
-        elif guess == "aegis": #прикольчик
-            printing(tk.END,'tkaegis boost 2')
-
-        elif guess == 'hell': #прикольчик
-            printing(tk.END, 'мм а ты любишь погоречей')
-        
-        elif guess == 'как дела':
-            printing(tk.END, "нормально а у тебя?")
-
-        elif guess == 'good place':
-            printing(tk.END, "yeah you know english wow")
-        
-        elif guess == "сука": #прикольчик
-            PRESS()
-            printing(tk.END, f'{name2} ты совсем офигел?')
-        elif guess == "молчи": #прикольчик
-            printing(tk.END,'окей команда принята пооокааа')
-            baring()
-            crush()
-
-        elif guess == 'help me':
-            baring()          
-            x = open('ERROR.txt', 'rt') # файл txt в котором что-то есть
-            sms = x.read()              # сам хз что там
-            printing(tk.END, sms)
-        
-        elif guess2 == "SECURE":
-            box()
-
-        elif guess == "kill you":                                           
-            PRESS()                                                        
-            printing(tk.END, f"{name2} ты идиот")                                                                                   
+HELP_TEXT = (
+    'команды: me, manto, drag 2, aegis, help me, kill you, ????, '
+    'сука, молчи (нинада), hell, UPDATE, darkness, DARK'
+)
 
 
-        elif guess == "god":
-            printing(tk.END, 'пожалуйста подождите...')
-            filesave()
+class CommandRouter:
+    def __init__(self, output: tk.Text, output2: tk.Text):
+        self.output = output
+        self.output2 = output2
 
-        elif guess == "bot":
-            printing(tk.END, "hm bot tg? он хранит много тайн")
-            gosa()
-        elif guess == "secretTWO": # секрет
-            radio()
-            btn8 = tk.Button(text='не нажимай я прошу тебя открой файл ERROR', command=testing2)
-            btn8.pack
-        
-        elif guess == "anomaly":
-            printing(tk.END , "oh god, give me my camer")
-            output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer    GIDS")
-            print(":3")
-        elif guess == "новый год":
-            printing(tk.END, "С НОВЫМ ГОДОМ 2024!!!")
-        
-        elif guess == "GIDS":
-            printing(tk.END, "ты что делаешь?")
-            texttwo()
-        
-        elif guess == "TEST":
-            printing(tk.END, "TEST TEST TEST TEST")
+        self._simple_responses: Dict[str, str] = {
+            "me": "ты? ну ок",
+            "update": "VERSION 0.5.0",
+            "manto": "manto aio 80 kit",
+            "drag 2": "drag 2 ичо дальше?",
+            "aegis": "tkaegis boost 2",
+            "hell": "мм а ты любишь погоречей",
+            "как дела": "нормально а у тебя?",
+            "good place": "yeah you know english wow",
+            "новый год": "С НОВЫМ ГОДОМ 2024!!!",
+            "test": "TEST TEST TEST TEST",
+            "darkness": "а может все таки нет? \n версия 0.5.0 все таки выходит похоже",
+        }
 
-        elif guess == "DARKNESS":
-            printing(tk.END, "а может все таки нет? \n версия 0.5.0 все таки выходит похоже")
+        self._handlers: Dict[str, Callable[[str], None]] = {
+            "help": self._cmd_help,
+            "привет": self._cmd_hello,
+            "пока": self._cmd_bye,
+            "secret": self._cmd_secret,
+            "сука": self._cmd_suka,
+            "молчи": self._cmd_molchi,
+            "help me": self._cmd_help_me,
+            "kill you": self._cmd_kill_you,
+            "god": self._cmd_god,
+            "bot": self._cmd_bot,
+            "secrettwo": self._cmd_secret_two,
+            "anomaly": self._cmd_anomaly,
+            "dark": self._cmd_dark,
+            "gids": self._cmd_gids,
+            "os dev": self._cmd_os_dev,
+            "secure": self._cmd_secure_cmd,
+            "memento mori": self._cmd_memento_mori_cmd,
+        }
 
-        elif guess == "os dev":
-            printing(tk.END, "хм интересно")
-            textfour()
-        
-        elif guess == "DARK":
-            print("в скором времени оно вернется из глубин ада")
-            textfive()
-        
-        # elif guess == "beta":
-        #     printing("test test test")
-        #     beta_1()
+    def run(self, command: str, user_name: str) -> None:
+        self._clear_output()
+
+        cmd_key = self._normalize_command(command)
+        if not cmd_key:
+            self._print("неправильная команда")
+            return
+
+        if cmd_key in self._simple_responses:
+            self._print(self._simple_responses[cmd_key])
+            return
+
+        handler = self._handlers.get(cmd_key)
+        if handler is None:
+            self._print("неправильная команда")
+            return
+
+        handler(user_name)
+
+    def _normalize_command(self, value: str) -> str:
+        return (value or "").strip().lower()
+
+    def _print(self, text: str) -> None:
+        self.output.insert(tk.END, text)
+
+    def _clear_output(self) -> None:
+        self.output.delete(1.0, tk.END)
+
+    def _require_name(self, user_name: str) -> Optional[str]:
+        user_name = (user_name or "").strip()
+        if user_name:
+            return user_name
+        self._print("Сначала введи имя")
+        return None
+
+    def _cmd_help(self, user_name: str) -> None:
+        self._print(HELP_TEXT)
+
+    def _cmd_hello(self, user_name: str) -> None:
+        name = self._require_name(user_name)
+        if not name:
+            return
+        self._print(f"{name} привет!")
+        texting()
+
+    def _cmd_bye(self, user_name: str) -> None:
+        name = self._require_name(user_name)
+        if not name:
+            return
+        self._print(f"{name} возврайщайся!")
+
+    def _cmd_secret(self, user_name: str) -> None:
+        self._print('секретный файл разблокирован')
+        textone()
+
+    def _cmd_suka(self, user_name: str) -> None:
+        name = self._require_name(user_name)
+        if not name:
+            return
+        self._print(f"{name} ты совсем офигел?")
+
+    def _cmd_molchi(self, user_name: str) -> None:
+        self._print('окей команда принята пооокааа')
+        baring()
+        crush()
+
+    def _cmd_help_me(self, user_name: str) -> None:
+        baring()
+        try:
+            with open('projects/secrets/ERROR.txt', 'rt', encoding='utf-8') as f:
+                self._print(f.read())
+        except FileNotFoundError:
+            self._print("Файл ERROR.txt не найден")
+
+    def _cmd_secure_cmd(self, user_name: str) -> None:
+        box()
+
+    def _cmd_kill_you(self, user_name: str) -> None:
+        name = self._require_name(user_name)
+        if not name:
+            return
+        self._print(f"{name} ты идиот")
+
+    def _cmd_god(self, user_name: str) -> None:
+        self._print('пожалуйста подождите...')
+        filesave()
+
+    def _cmd_bot(self, user_name: str) -> None:
+        self._print("hm bot tg? он хранит много тайн")
+        name = self._require_name(user_name)
+        if not name:
+            return
+        self._print(f"\n{name} прими то что ты не можешь принять")
+
+    def _cmd_anomaly(self, user_name: str) -> None:
+        self._print("oh god, give me my camer")
+        self.output2.insert(tk.END, "EERERERERERE anomale mara shmara erererererer    GIDS")
+        print(":3")
+
+    def _cmd_memento_mori_cmd(self, user_name: str) -> None:
+        msg = "не надо о ней помнить она сама напомнит о себе..."
+        self._print(msg)
+        self.output2.insert(tk.END, msg)
+
+    def _cmd_secret_two(self, user_name: str) -> None:
+        radio()
+
+    def _cmd_gids(self, user_name: str) -> None:
+        self._print("ты что делаешь?")
+        texttwo()
+
+    def _cmd_os_dev(self, user_name: str) -> None:
+        self._print("хм интересно")
+        textfour()
+
+    def _cmd_dark(self, user_name: str) -> None:
+        print("в скором времени оно вернется из глубин ада")
+        textfive()
 
 
-        else:
-            printing(tk.END, "неправильная команда")
-        def gosa():
-            printing(tk.END, f"{name2} прими то что ты не можешь принять")
-
-except(all):
-    print("ошибка команд")
-
+def _initialize_system() -> None:
+    try:
+        folders()
+        baring()
+    except Exception:
+        logging.error(traceback.format_exc())
 
 
-window = tk.Tk()       # создает окно с кодом
-window.configure(background='black')
-window.title('O.S. PROJECT 0.5.0')
-#window.iconbitmap('C:\codes2\project\img\Python.ico')            
-# Создаем виджеты
-label = tk.Label(window, text="введи что-нибудь:")                                  # виджеты кнопки, поле для ввода, само окно
-label.configure(background="black", fg='white')
-label.grid_configure(row=10,column=10)
+def main() -> None:
+    _initialize_system()
 
-entry = tk.Entry(window)
-entry.grid_configure(row=20,column=10)
+    window = tk.Tk()
+    window.configure(background='black')
+    window.title('O.S. PROJECT 0.5.0')
 
-label2 = tk.Label(window, text="имя:")
-label2.configure(background="black", fg='white')
-label2.grid_configure(row=30,column=10)
+    label = tk.Label(window, text="введи что-нибудь:")
+    label.configure(background="black", fg='white')
+    label.grid_configure(row=10, column=10)
 
-entry2 = tk.Entry(window)                                                     
-entry2.grid_configure(row=40,column=10)
+    entry = tk.Entry(window)
+    entry.grid_configure(row=20, column=10)
 
-button = tk.Button(window, text="Ввод", command=main)
-button.configure(background="black", fg='white')
-button.grid_configure(row=50,column=10)
+    label2 = tk.Label(window, text="имя:")
+    label2.configure(background="black", fg='white')
+    label2.grid_configure(row=30, column=10)
 
-output = tk.Text(window) 
-output.configure(background="black", fg='red')
-output.grid_configure(row=60,column=10)
-#2
-output2 = tk.Text(window)
-output2.configure(background="black", fg='white')
-output2.grid_configure(row=70,column=10)
-output.insert(tk.END, "чтобы увидеть все команды напиши helр, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.5.0 REALESE") # надпись в начале
-window.mainloop()
+    entry2 = tk.Entry(window)
+    entry2.grid_configure(row=40, column=10)
+
+    output = tk.Text(window)
+    output.configure(background="black", fg='red')
+    output.grid_configure(row=60, column=10)
+
+    output2 = tk.Text(window)
+    output2.configure(background="black", fg='white')
+    output2.grid_configure(row=70, column=10)
+
+    router = CommandRouter(output, output2)
+    secret_btn: Optional[tk.Button] = None
+
+    def on_submit() -> None:
+        nonlocal secret_btn
+        cmd = entry.get()
+        name = entry2.get()
+        router.run(cmd, name)
+
+        if cmd.strip().lower() == "secrettwo" and secret_btn is None:
+            secret_btn = tk.Button(
+                window,
+                text='не нажимай я прошу тебя открой файл ERROR',
+                command=testing2,
+            )
+            secret_btn.grid_configure(row=80, column=10)
+
+    button = tk.Button(window, text="Ввод", command=on_submit)
+    button.configure(background="black", fg='white')
+    button.grid_configure(row=50, column=10)
+
+    output.insert(tk.END, "чтобы увидеть все команды напиши help, также сперва впиши имя, предупреждаю что программа может выключать компьютер \n пожалуйста запускайте когда будете готовы \n \n v0.5.0 REALESE")
+    window.mainloop()
+
+
+if __name__ == "__main__":
+    main()
